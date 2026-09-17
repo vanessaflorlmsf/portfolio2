@@ -1,0 +1,486 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff7fc;
+    color: #493844;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #f8b5d4,
+        #d9b8f5
+    );
+
+    text-align: center;
+    padding: 55px 20px 35px;
+
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+    box-shadow: 0 8px 25px rgba(170, 90, 140, 0.20);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    font-size: 35px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* SUBTÍTULO */
+
+.subtitulo {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0 30px;
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #7b4567;
+    background: white;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(100, 50, 90, 0.12);
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #a85c87;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+
+/* ========================================
+   TÍTULOS
+======================================== */
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.titulo-secao span {
+    font-size: 28px;
+}
+
+.titulo-secao h2 {
+    font-family: Georgia, serif;
+    color: #a94f7d;
+    font-size: 32px;
+}
+
+
+/* ========================================
+   SOBRE
+======================================== */
+
+.sobre {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 8px 30px rgba(150, 80, 120, 0.10);
+}
+
+.sobre p {
+    margin-bottom: 18px;
+}
+
+.sobre strong {
+    color: #a64f7a;
+}
+
+
+/* FRASE */
+
+.frase {
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f7,
+        #f4e9ff
+    );
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    color: #9a4f76;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   SERVIÇOS
+======================================== */
+
+.servicos-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+
+.card-servico {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(150, 80, 120, 0.10);
+
+    border: 2px solid #f9e1ef;
+
+    transition: 0.3s;
+}
+
+
+.card-servico:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(150, 80, 120, 0.18);
+
+    border-color: #e5acd0;
+}
+
+
+.icone {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-servico h3 {
+    color: #a94f7d;
+
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+
+.card-servico p {
+    color: #6b5964;
+}
+
+
+/* ========================================
+   FOTO
+======================================== */
+
+.foto {
+    text-align: center;
+}
+
+
+.foto img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 30px;
+
+    border: 8px solid white;
+
+    box-shadow: 0 10px 30px rgba(150, 80, 120, 0.20);
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contato {
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f7,
+        #f3e8ff
+    );
+
+    padding: 45px 25px;
+
+    border-radius: 30px;
+}
+
+
+.contato p {
+    margin-bottom: 25px;
+}
+
+
+.botao-whatsapp {
+    display: inline-block;
+
+    background: #a95c87;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(150, 70, 110, 0.20);
+
+    transition: 0.3s;
+}
+
+
+.botao-whatsapp:hover {
+    background: #8e456f;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   REDES SOCIAIS
+======================================== */
+
+aside {
+    max-width: 1000px;
+
+    margin: 0 auto 50px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+}
+
+
+aside h3 {
+    font-family: Georgia, serif;
+
+    color: #a94f7d;
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.redes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.rede {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: #6e405a;
+
+    font-weight: 600;
+
+    box-shadow: 0 5px 15px rgba(120, 70, 100, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.rede:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 22px rgba(120, 70, 100, 0.18);
+}
+
+
+.rede img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    background: #70405d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+
+        width: 200px;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .sobre {
+        padding: 25px 20px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 27px;
+    }
+
+    .card-servico {
+        padding: 25px 20px;
+    }
+
+    .redes {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .rede {
+        width: 220px;
+
+        justify-content: center;
+    }
+}
